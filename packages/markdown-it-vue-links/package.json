@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-vue-links",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Convert internal links to vue router links or a custom component in markdown-it.",
   "keywords": [
     "markdown-it",
