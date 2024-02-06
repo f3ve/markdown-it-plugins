@@ -8,7 +8,8 @@
       "allowBranch": "main",
       "changelog": true,
       "conventionalCommits": true,
-      "message": "build: version %v"
+      "message": "build: version %v",
+      "gitTagVersion": true
     }
   },
   "packages": ["packages/*"],
