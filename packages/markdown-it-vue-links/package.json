@@ -2,18 +2,29 @@
   "name": "markdown-it-vue-links",
   "version": "0.2.0",
   "description": "Convert internal links to vue router links or a custom component in markdown-it.",
+  "source": "./src/index.ts",
   "keywords": [
     "markdown-it",
     "markdown-it-plugin",
     "vue",
     "vue-router"
   ],
-  "license": "ISC",
-  "author": "",
+  "exports": {
+    "require": "./dist/markdown-it-vue-links.cjs",
+    "import": "./dist/markdown-it-vue-links.module.js"
+  },
+  "types": "./dist/markdown-it-vue-links.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "license": "MIT",
+  "author": "f3ve",
   "type": "module",
-  "main": "index.js",
+  "main": "./dist/markdown-it-vue-links.cjs",
+  "module": "./dist/markdown-it-vue-links.module.js",
   "scripts": {
-    "build": "rollup -c rollup.config.ts --configPlugin typescript"
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "devDependencies": {
     "@types/markdown-it": "^13.0.7",
