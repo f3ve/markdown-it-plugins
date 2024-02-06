@@ -1,6 +1,7 @@
 {
   "npmClient": "pnpm",
   "version": "0.0.1",
+  "changelogPreset": "angular",
   "command": {
     "version": {
       "allowBranch": "main",
