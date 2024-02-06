@@ -2,7 +2,11 @@
   "include": ["packages/**/*"],
   "exclude": ["node_modules", "lib", "dist"],
   "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
     "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext"],
     "allowUmdGlobalAccess": false,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
