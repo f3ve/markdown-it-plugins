@@ -8,7 +8,8 @@
     "build:links": "pnpm -F markdown-it-vue-links run build",
     "lint": "eslint .",
     "lint:fix": "eslint . fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "version": "lerna version"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
