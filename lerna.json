@@ -1,20 +1,15 @@
 {
-  "$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
-  "npmClient": "pnpm",
-  "version": "0.2.0",
-  "changelogPreset": "conventional-changelog-conventionalcommits",
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "independent",
+  "changelogPreset": "angular",
   "loglevel": "verbose",
   "command": {
-    "publish": {
-      "cleanupTempFiles": true,
-      "removePackageFields": ["devDependencies", "scripts"]
-    },
     "version": {
       "allowBranch": "main",
-      "conventionalCommits": true,
-      "message": "build: version %v",
-      "changelogIncludeCommitsGitAuthor": true
+      "changelog": true,
+      "conventionalCommits": true
     }
   },
-  "packages": ["packages/*"]
+  "packages": ["packages/*"],
+  "npmClient": "pnpm"
 }
