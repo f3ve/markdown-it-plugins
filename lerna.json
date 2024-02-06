@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
   "npmClient": "pnpm",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "changelogPreset": "conventional-changelog-conventionalcommits",
   "loglevel": "verbose",
   "command": {
@@ -12,7 +12,7 @@
     "version": {
       "allowBranch": "main",
       "conventionalCommits": true,
-      "message": "chore(release): publish new version %v",
+      "message": "build: version %v",
       "changelogIncludeCommitsGitAuthor": true
     }
   },
