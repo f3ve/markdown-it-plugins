@@ -1,6 +1,7 @@
 {
   "name": "markdown-it-vue-links",
   "version": "0.3.0",
+  "private": false,
   "description": "Convert internal links to vue router links or a custom component in markdown-it.",
   "source": "./src/index.ts",
   "keywords": [
@@ -9,22 +10,28 @@
     "vue",
     "vue-router"
   ],
+  "types": "./dist/types/markdown-it-vue-links.d.ts",
   "exports": {
-    "require": "./dist/markdown-it-vue-links.cjs",
-    "import": "./dist/markdown-it-vue-links.module.js"
+    ".": {
+      "import": "./dist/markdown-it-vue-links.js",
+      "require": "./dist/markdown-it-vue-links.umd.cjs"
+    }
   },
-  "types": "./dist/markdown-it-vue-links.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f3ve/markdown-it-plugins"
+  },
   "files": [
     "./dist"
   ],
   "license": "MIT",
   "author": "f3ve",
   "type": "module",
-  "main": "./dist/markdown-it-vue-links.cjs",
-  "module": "./dist/markdown-it-vue-links.module.js",
+  "main": "./dist/markdown-it-vue-links.umd.cjs",
+  "module": "./dist/markdown-it-vue-links.js",
   "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
+    "build": "vite build",
+    "dev": "vite build --watch"
   },
   "devDependencies": {
     "@types/markdown-it": "^13.0.7",
