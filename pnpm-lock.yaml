@@ -25,6 +25,9 @@ importers:
       "@lerna-lite/publish":
         specifier: ^3.2.1
         version: 3.2.1(typescript@5.3.3)
+      "@lerna-lite/version":
+        specifier: ^3.2.1
+        version: 3.2.1(@lerna-lite/publish@3.2.1)(typescript@5.3.3)
       "@rollup/plugin-typescript":
         specifier: ^11.1.6
         version: 11.1.6(rollup@4.9.6)(typescript@5.3.3)

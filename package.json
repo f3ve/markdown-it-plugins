@@ -23,6 +23,7 @@
     "@f3ve/eslint-config": "^1.0.6",
     "@lerna-lite/cli": "^3.2.1",
     "@lerna-lite/publish": "^3.2.1",
+    "@lerna-lite/version": "^3.2.1",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.11.16",
     "eslint": "^8.56.0",
