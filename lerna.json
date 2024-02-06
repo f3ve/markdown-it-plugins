@@ -1,0 +1,8 @@
+{
+  "npmClient": "pnpm",
+  "command": {
+    "version": {
+      "conventionalCommits": true
+    }
+  }
+}
