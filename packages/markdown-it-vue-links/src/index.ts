@@ -1,3 +1,5 @@
-export function myFunction() {
-  console.log("ran my function");
-}
+import type Markdownit from "markdown-it";
+
+export const vueLinksPlugin: Markdownit.PluginWithOptions = (mdIt, options) => {
+  console.log(mdIt, options);
+};
